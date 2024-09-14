@@ -1,0 +1,232 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #1c1b18;
+    color: #f5f5f1;
+    line-height: 1.8;
+    
+}
+
+header{
+    background-color: #2c2a28;
+    color: #f5f5f1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+
+}
+
+nav .logo{
+    font-family: 'Playfair Display',serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#F0BC42 ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    
+    list-style: none;
+    display :flex;
+    gap: 2rem;
+    
+}
+
+nav ul li a {
+    color:#cdaa7d ;
+    text-decoration: none;
+    font-size: 1.4rem ;
+    transition: color 0.4s;
+}
+
+nav ul li a:hover {
+    color:#cdaa7d;
+}
+
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+    
+}
+
+.colosseum{
+    display: flex;
+    width: 1550px;
+    height: 750px; 
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 17px;
+    padding-right: 16px;
+   
+    object-fit: cover;
+}
+
+
+
+main{
+    padding: 2rem;
+}
+
+
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    color: #cdaa7d;
+    margin: 2rem;
+}
+
+p{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #e0dcd6;
+    font-size: 1.2rem;
+}
+
+.monument-list{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+ 
+.monument{
+    flex: 1 1 300px; 
+    max-width: 300px;
+    min-height: 300px;
+    background-color: #2c2a28;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4 s ease;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-decoration: none;
+    
+
+}
+
+
+
+
+.monument:hover {
+    transform:scale(1.05);
+}
+
+.monument h3 a {
+    font-size: 1.6rem;
+    font-family: 'Playfair Display',serif;
+    color: #1c1b18;
+    text-decoration: none;
+    transition: color  0.4s;
+}
+
+
+
+.monument a:hover {
+    color: #f5f5f1;
+}
+
+#castel-santangelo{
+    background-image: url(https://i0.wp.com/delightfullyitaly.com/wp-content/uploads/2018/09/Castel-SantAngelo-at-sunset_www.boorp_.com_01.jpg?resize=525%2C788&ssl=1);
+}
+
+#pantheon{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNk0IV2Nlx5Hdq42IJPcaNHhVsdGSOx-acdA&s);
+}
+
+#vatican{
+    background-image: url(https://i0.wp.com/www.touristitaly.com/wp-content/uploads/2023/06/shutterstock_1218983827-scaled.jpg?fit=5352%2C3504&ssl=1);
+}
+
+#trevi-fountain{
+    background-image: url(https://images.desenio.com/zoom/14773_1.jpg);
+    
+}
+ .contact p{ 
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact a {
+    color:#cdaa7d ;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #2c2a28;
+    color: #f5f5f1;
+    text-align: center;
+    padding: 1rem;
+} 
+
+@media (max-width:768px) {
+    .hero {
+        height: auto;
+    }
+
+    .colosseum{
+        width: 100%;
+        max-height: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul li a { 
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    .monument{
+        flex:1 1 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .colosseum{
+        max-height: 150px;
+    }
+    nav .logo{
+        font-size: 1.8rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+}
